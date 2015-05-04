@@ -1,7 +1,11 @@
 <?php
 
-<?php
-ini_set('memory_limit', '2048M');
+    $XHPROF_ROOT = "/var/www/html/xhprof";
+    include_once $XHPROF_ROOT . "/xhprof_lib/utils/xhprof_lib.php";
+    include_once $XHPROF_ROOT . "/xhprof_lib/utils/xhprof_runs.php";
+    // start profiling
+    xhprof_enable();
+
 /**
  * LCS - Print one of the longest common subsequence
  *             from two given input strings.
@@ -454,3 +458,10 @@ echo LCSQuad($s1, $s2);
 echo "\n";
 echo $end = microtime(true) - $start;
 echo "\n";
+
+    //end profiling 
+    $xhprof_data = xhprof_disable();
+    $xhprof_runs = new XHProfRuns_Default();
+    $run_id = $xhprof_runs->save_run($xhprof_data, "foobar");
+    
+    //
