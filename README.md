@@ -8,4 +8,4 @@ The following Algorithms have been implemented:
 3. Dynamic programming version of the algorithm
 4. Quadratic-time linear-space algorithm (Hirschberg)
 
-See http://www.cs.rit.edu/~spr/COURSES/ALG/PROJECT/project.html for more details.
+See http://www.cs.rit.edu/~spr/COURSES/ALG/PROJECT/project.html for more details. Visit http://debjit.me/algorithms for Profiler Runs and Images
