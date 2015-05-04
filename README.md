@@ -1,5 +1,5 @@
 # LCS-PHP
-An Implementation of various LCS (Longest Common Algorithms) in PHP. See Readme.md for more details.
+An Implementation of various LCS (Longest Common Subsequence) Algorithms in PHP. See Readme.md for more details.
 
 The following Algorithms have been implemented:
 
